@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from django.http import HttpResponse
 # Create your views here.
 
 
@@ -21,3 +21,7 @@ def home(request):
             'teacher': 'Iftekhar'
         },
     ], 'name': 'Tanver', 'lst': [1, 2, 4, 7], 'blog': 'I am Tanver Rana Sobur. I am the student of Bangladesh University department of CSE. THis is our blog website.'})
+
+
+def about(request):
+    return render(request, './first_app/about.html')
