@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, './first_app/index.html', {'name': 'Tanver Rana Sobur', 'age': 19, 'marks': 90, 'courses': [
+    return render(request, './first_app/home.html', {'name': 'Tanver Rana Sobur', 'age': 19, 'marks': 90, 'courses': [
         {
             'id': 1,
             'course': 'C',
